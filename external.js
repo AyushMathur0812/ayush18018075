@@ -73,36 +73,42 @@ var mov = formData.get('mov');
 var sing = formData.get('sing');
 var gender = formData.get('gender');
 var pass = formData.get('pwd');
+
 if(name=="")
 {
     alert("Name must be filled out");
+return false;
     }
 else if(age=="")
 {
     alert("age must be a number");
+return false;
     }
 else if(address=="")
 {
     alert("address must be filled out");
+return false;
     }
     else if(sub=="")
 {
     alert("Favourite subject must be filled out");
+return false;
     }
         else if(mov=="")
 {
     alert("Favourite Movie must be filled out");
+return false;
     }
            else if(sing=="")
 {
     alert("Favourite Singer must be filled out");
+return false;
     }
 else if(gender==null)
 {
 alert("Please select Gender");
-
+return false;
     } 
- 
 var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
 if(pass.match(decimal)) 
 { 
